@@ -5,7 +5,7 @@ var http = require("node:http")
 
 var app = express()
 var server = http.createServer(app)
-//Manbmb
+
 app.use(express.static("public"))/*Allow the user to access the public folder.*/
 
 app.get('/', (request, response) => {/*When the user requests the domain root...*/

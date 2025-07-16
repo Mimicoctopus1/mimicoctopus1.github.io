@@ -1,37 +1,14 @@
 * {
   margin: 0%;
+  padding: 0%;
 }
 
 body {
   padding-top: 10%;
 }
 
-.menuBar {
-  background-color: rgba(255, 255, 255, 1);
-  border: 1px solid rgba(0, 0, 0, 1);
-  position: fixed;
-  top: 0%;
-  left: 0%;
+.banner {
   width: 100%;
-  height: 10%;
-  overflow-x: auto;
-  overflow-y: hidden;
-}
-
-.menuBar div {
-  display: inline-block;
-  text-align: center;
-  height: 100%;
-}
-
-.menuBar div a {
-  text-decoration: none;
-  color: rgba(0, 0, 0, 1);
-  height: 100%;
-}
-
-img {
-  height: 60%;
 }
 
 .lightingButton {
