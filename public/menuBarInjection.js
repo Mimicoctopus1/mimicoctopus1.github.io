@@ -1,8 +1,8 @@
 var menuBarInjector = document.querySelectorAll(".menuBarInjector")[0]
+var head = document.querySelectorAll("head")[0]
 
-var menuBar = document.createElement("div")
-menuBar.innerHTML = `
-<style>
+var style = document.createElement("style")
+style.innerHTML = `
   .menuBar {
     line-height: 1em;
     background-color: rgba(255, 255, 255, 1);
@@ -37,21 +37,30 @@ menuBar.innerHTML = `
   body {
     padding-top: 10%;/*Makes room for the menubar.*/
   }
-</style>
+`
+head.appendChild(style)
+
+var menuBar = document.createElement("nav")
+menuBar.innerHTML = `
 <div class="menuBar">
   <div>
     <a href="/">
-    <img src="/assets/menuBar/home.png"><br>
-    Troop 199
-  </a>
-</div>
+      <img src="/assets/menuBar/home.png"><br>
+      Troop 199
+    </a>
+  </div>
   <div>
-  <a href="/posts">
+    <a href="/posts">
       <img src = "/assets/menuBar/posts.png"><br>
       Posts
-  </a>
+    </a>
+  </div>
+  <div>
+    <a href="/gallery">
+      <img src = "/assets/menuBar/gallery.png"><br>
+      Gallery
+    </a>
   </div>
 </div>
 `
-
 menuBarInjector.replaceWith(menuBar)
