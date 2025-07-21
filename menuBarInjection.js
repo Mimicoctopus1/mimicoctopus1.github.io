@@ -9,10 +9,10 @@ style.innerHTML = `
     border: 1px solid rgba(0, 0, 0, 1);
     padding: none;
     position: fixed;
-    top: 0%;
-    left: 0%;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 10%;
+    height: 10vh;
     overflow-x: auto;
     overflow-y: hidden;
   }
@@ -35,32 +35,32 @@ style.innerHTML = `
   }
 
   body {
-    padding-top: 10%;/*Makes room for the menubar.*/
+    margin-top: 0;
+    padding-top: 10vh;/*Makes room for the menubar.*/
   }
 `
 head.appendChild(style)
 
 var menuBar = document.createElement("nav")
+menuBar.className = "menuBar"
 menuBar.innerHTML = `
-<div class="menuBar">
-  <div>
-    <a href="/">
-      <img src="/assets/menuBar/home.png"><br>
-      Troop 199
-    </a>
-  </div>
-  <div>
-    <a href="/posts">
-      <img src = "/assets/menuBar/posts.png"><br>
-      Posts
-    </a>
-  </div>
-  <div>
-    <a href="/gallery">
-      <img src = "/assets/menuBar/gallery.png"><br>
-      Gallery
-    </a>
-  </div>
+<div>
+  <a href="/">
+    <img src="/assets/menuBar/home.png"><br>
+    Troop 199
+  </a>
+</div>
+<div>
+  <a href="/posts">
+    <img src = "/assets/menuBar/posts.png"><br>
+    Posts
+  </a>
+</div>
+<div>
+  <a href="/gallery">
+    <img src = "/assets/menuBar/gallery.png"><br>
+    Gallery
+  </a>
 </div>
 `
 menuBarInjector.replaceWith(menuBar)
