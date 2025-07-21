@@ -1,16 +1,11 @@
-* {
-  margin: 0%;
-  padding: 0%;
+.banner {
+  width: 100vw;
 }
 
 body {
-  padding-top: 10%;
+  margin: 0;
 }
 
-.banner {
-  width: 100%;
-}
-
-.lightingButton {
-  display: inline-block;
+.belowBanner {
+  margin: 1em;
 }
