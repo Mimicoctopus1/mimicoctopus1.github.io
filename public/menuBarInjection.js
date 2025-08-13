@@ -15,6 +15,7 @@ style.innerHTML = `
     height: 10vh;
     overflow-x: auto;
     overflow-y: hidden;
+    z-index: 100;
   }
 
   .menuBar div {
