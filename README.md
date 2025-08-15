@@ -33,4 +33,4 @@ git push github gh-pages
 git push codeberg gh-pages:pages
 ```
 
-Also, now go to GitHub and change the GitHub Pages domain to 199.k.vu. Pushing undoes this.
+Also, now go to [GitHub](https://github.com/Mimicoctopus1/mimicoctopus1.github.io/settings/pages) and change the GitHub Pages domain to 199.k.vu. Pushing undoes this, so you need to do it again. Do not add a CNAME file because it will be pushed over to Codeberg Pages.
