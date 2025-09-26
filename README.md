@@ -17,7 +17,7 @@ git branch -D gh-pages
 Now, because Codeberg and GitHub Pages host statically (you can't access the actual server), we can only give them the contents of the ``public`` folder. So, put the contents of the public folder inside that branch.
 ```sh
 #If you have the pages branch on your local machine
-git subtree split --prefix=public --branch=pagesn
+git subtree split --prefix=public --branch=pages
 
 #If you have the gh-pages branch on your local machine
 git subtree split --prefix=public --branch=gh-pages
