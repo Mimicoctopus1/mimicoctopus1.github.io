@@ -1,4 +1,3 @@
-var menuBarInjector = document.querySelectorAll(".menuBarInjector")[0]
 var head = document.querySelectorAll("head")[0]
 
 var style = document.createElement("style")
@@ -64,4 +63,4 @@ menuBar.innerHTML = `
   </a>
 </div>
 `
-menuBarInjector.replaceWith(menuBar)
+document.body.prepend(menuBar)
