@@ -1,7 +1,7 @@
 {
-  "name": "node-express-web",
+  "name": "troop-199",
   "version": "1.0.0",
-  "description": "",
+  "description": "A website for Scouting troop 199",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
