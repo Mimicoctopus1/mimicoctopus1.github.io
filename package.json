@@ -4,7 +4,7 @@
   "description": "A website for Scouting troop 199",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
+    "dev": "nodemon index.js -- --verbose",
     "start": "node index.js"
   },
   "author": "",
