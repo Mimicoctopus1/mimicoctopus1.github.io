@@ -7,7 +7,7 @@ var messageResponses = {
 }
 
 ws.addEventListener("message", function(event) {
-  let data = JSON.parse(event.data).data
   let type = JSON.parse(event.data).type
+  let data = JSON.parse(event.data).data
   messageResponses[type](data)
 })
