@@ -41,6 +41,7 @@ body {
 	margin-top: 0;
 	padding-top: 10vh;/*Makes room for the menubar.*/
 }
+
 .footer {
 	box-sizing: border-box;/*Control width using border*/
 	width: 100vw;
