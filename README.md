@@ -44,11 +44,11 @@ echo -n "Do you want to force? (y/n): "
 read force
 if [[ $force == y ]]
 then
-  echo "Forcing..."
-  force=" --force"
+	echo "Forcing..."
+	force=" --force"
 else
-  echo "Not forcing..."
-  force=""
+	echo "Not forcing..."
+	force=""
 fi
 
 git push$force github main 
@@ -56,13 +56,13 @@ git push$force codeberg main
 
 if [[ "$(git branch)" == *pages* ]] 
 then
-  branch=pages
+	branch=pages
 elif [[ "$(git branch)" == *gh-pages* ]]
 then
-  branch=gh-pages
+	branch=gh-pages
 else
-  echo -n "What branch will you use for GitHub and Codeberg Pages? (pages/gh-pages)"
-  read branch
+	echo -n "What branch will you use for GitHub and Codeberg Pages? (pages/gh-pages)"
+	read branch
 fi
 
 git branch -D $branch &> /dev/null
