@@ -64,7 +64,7 @@ header.innerHTML = `
 </div>
 `
 
-var footer = document.createElement("div")
+var footer = document.createElement("nav")
 footer.className = "footer"
 footer.innerHTML = `
 <h1>Acknowledgements</h1>
