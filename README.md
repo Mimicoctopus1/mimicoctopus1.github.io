@@ -2,7 +2,7 @@
 This is Troop 199's website.
 
 # Pages
-There is a branch called `pages`. On GitHub it is called `gh-pages`. This branch is for [GitHub Pages](https://pages.github.com) and [Codeberg Pages](https://codeberg.page) to serve static websites at [https://Mimicoctopus1.github.io](https://Mimicoctopus1.github.io) and [https://Mimicoctopus1.codeberg.page](https://Mimicoctopus1.codeberg.page). Using [FreeDNS](https://freedns.afraid.org), the GitHub site has a CNAME for [199.k.vu](https://199.k.vu). To publish to these static websites, use this [copy and paste script](#copy-paste) or continue manually:
+There is a branch called `pages`. On GitHub it is called `gh-pages`. This branch is for [GitHub Pages](https://pages.github.com) and [Codeberg Pages](https://codeberg.page) to serve static websites at [https://Mimicoctopus1.github.io](https://Mimicoctopus1.github.io) and [https://Mimicoctopus1.codeberg.page](https://Mimicoctopus1.codeberg.page). Using [FreeDNS](https://freedns.afraid.org), the GitHub site has a CNAME for [199.k.vu](https://199.k.vu). However, because this is the same code used for Codeberg, you have to [manually enter the domain on GitHub using the GitHub Pages settings](#domain-change). To publish to these static websites, use the [copy and paste script](#copy-paste) or continue manually:
 
 Find which branch (`gh-pages` or `pages`) you have on your local machine.
 ```sh
