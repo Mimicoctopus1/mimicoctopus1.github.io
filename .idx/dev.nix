@@ -20,6 +20,9 @@
         npm-install = "npm ci --no-audit --prefer-offline --no-progress --timing";
       };
       # To run something each time the workspace is (re)started, use the `onStart` hook
+			onStart = {
+				npm-run-dev = "npm run dev";
+			};
     };
     # Enable previews and customize configuration
     previews = {
