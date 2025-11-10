@@ -12,8 +12,8 @@ if(process.argv.includes("--verbose")) {
 }
 
 verbose("Requiring dependencies")
-verbose("|path")
-var path = require("path")
+verbose("|node:path")
+var path = require("node:path")
 verbose("|express")
 var express = require("express")
 verbose("|ws")
