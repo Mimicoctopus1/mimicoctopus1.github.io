@@ -66,7 +66,6 @@ var messageResponses = {
 
 verbose("Setting up WebSocket events")
 wss.on("connection", function(ws) {
-	verbose(wss.clients.size + " users  +")
 	wss.send(JSON.stringify({
 		"type": "population update",
 		"data": wss.clients.size
@@ -79,7 +78,6 @@ wss.on("connection", function(ws) {
 	})
 	
 	ws.addEventListener("close", function() {
-		verbose(wss.clients.size + " users  -")
 		wss.send(JSON.stringify({
 			"type": "population update",
 			"data": wss.clients.size
@@ -97,7 +95,7 @@ verbose("|____________________________________________________|  🌍    ✨")
 
 stdinResponses = {
 	"population": function() {
-		console.log(wss.clients.size + " users  =")
+		console.log(wss.clients.size + " users")
 	}
 }
 var readInput = function() {
