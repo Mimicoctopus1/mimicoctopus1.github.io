@@ -3,6 +3,7 @@
 	"IDX.aI.enableCodebaseIndexing": true,
 	"editor.detectIndentation": false,
 	"editor.tabSize": 2,
+	"editor.links": false,
 	"editor.insertSpaces": false,
-	"git.autofetch": true
+	"git.autofetch": true,
 }
